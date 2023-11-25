@@ -11,10 +11,10 @@ jobs:
           fetch-depth: 0
           path: self
       - name: checkout ipxe/ipxe github repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: v1.20.1 #try to go with latest
+          ref: initrd #try to go with latest
           repository: ipxe/ipxe
           path: ipxe
       - name: install ipxe build deps into container
